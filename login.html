@@ -1,0 +1,107 @@
+<HTML>
+​
+<HEAD>
+​
+    <TITLE>About Us Page of ShowOnWheels</TITLE>
+    <LINK type="text/css" rel="stylesheet" href="ExternalStylesheet\homestylesheet.css" />
+​
+</HEAD>
+​
+<BODY >
+​
+    <DIV id="mainDivContainer" style="position: relative; width: 100%; margin-top: 0px; margin-bottom: 0px;">
+​
+        <DIV style="width: 960px;  margin-top: 5px; margin-left: auto; margin-right: auto">
+​
+                    <DIV style="width: 960px; height:80px;">
+​
+                   		 <IMG id="logo" src="images\Logo.png" width="500" height="100">
+​
+                   			
+                    <H5>For Enquiry<BR>
+​
+                        Call Us 9225648543
+​
+                    </H5>
+		 <IMG id="callus" src="images\callus.png">
+			</DIV>
+​
+​
+                    <DIV style="width:500px; height:20px; float:left; text-align:center;">
+                    <SPAN class="auto-style1"><B>The Ultimate Way For Booking Movie Tickets</B></SPAN>
+​
+		                </DIV>
+​
+                 
+            <DIV id="topnav" style="float:left;width: 960px; height: 20px; word-spacing: 5px; font-size: 90%; padding-left:60px; padding-top: 6px; white-space: nowrap; text-align:left; background-color: black;">
+                    <NAV>
+			
+			 <A href="index.html">Home</A> |
+                        <A href="aboutus.html">About Us</A> |
+​
+                        <A href="contactus.html">Contact Us</A> |
+​
+                        <A href="upcomingmovies.html">Upcoming Movies</A> |
+​
+                  </NAV>
+   
+           </DIV>
+​
+            <DIV style="width: 960px; height: 600px; position: relative;margin:0px; padding: px; overflow: hidden; background-color: white;">
+		      <DIV style="width: 500px;  margin-top: 0px; margin-left: 100px; margin-right: auto;">
+​
+                <header>
+                    <h4>Create an Account</h4>
+                </header>     
+                <article>
+                    <form action="#">
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" onkeyup="get()"b><br>
+​
+                        <label for="password">Password: </label>
+                        <input type="password" id="password"><br>
+​
+                        <button type="login" onclick="login()">Login</button>
+​
+​
+                    </form>
+                </article>
+                <aside>
+                    <p id="error"></p>
+                </aside>     
+​
+            </DIV>
+​
+         </DIV>
+​
+    </DIV>
+​
+    <script>
+​
+        function get(){
+            username=document.getElementById('username').value;
+            local_username=localStorage.getItem('username');
+            if(username==local_username){
+                password=localStorage.getItem("password");
+                document.getElementById("password").value=password;
+            }
+        }
+​
+        function login(){
+            var local_username=localStorage.getItem('username');
+            var local_password=localStorage.getItem('password');
+            var username=document.getElementById('username').value;
+            var password=document.getElementById('password').value;
+            if((local_username==username) && (local_password==password)){
+                document.getElementById('error').innerHTML="Logged in successfully";
+            }else{
+                document.getElementById('error').innerHTML="Username and Password doesn't match";
+            }
+        }
+    </script>
+​
+ 
+​
+</BODY>
+​
+</HTML>
