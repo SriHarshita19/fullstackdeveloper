@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user" class="com.cts.training.model.UserEntity">
+   <!-- <property name="id" value="101"/>
+    <property name="username" value="harshita"/>
+    <property name="password" value="123"/>
+    <property name="email" value="harshi@gmail.com"/>
+    <property name="phone" value="7483636"/>
+    <property name="enabled" value="true"/>-->
+    
+    <constructor-arg value=102, name="id" type="int"/>
+    <constructor-arg value="user" name="username"/>
+    <constructor-arg value="password" name="password"/>
+     <constructor-arg value="user@gmail.com" name="email"/>
+     <constructor-arg value="76566" name="phone"/>
+    
+    </bean>
+
+</beans>

@@ -1,0 +1,45 @@
+<header style="color: rgb(21, 37, 54);" class="text-center"><h2>Stock Market Charting</h2></header>
+    <div class="jumbotron jumbotron-fluid">
+        <h2 class="text-center">StockPrice</h2>
+        <div class="container">
+            <form class=" w-50 container" [formGroup]="registerUser"  (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="companycode">CompanyCode</label>
+                    <input type="number" class="form-control " name="companycode" formControlName="companycode"
+                    placeholder="Enter Id with max 5 digits">
+                </div>
+                <div class="form-group">
+                    <label for="stockexchange">Id</label>
+                    <input type="number" class="form-control " name="stockexchange" formControlName="stockexchange"
+                    placeholder="Enter stockexchange">
+                </div>
+                <div class="form-group">
+                        <label for="currentprize">CurrentPrize</label>
+                        <input type="number" class="form-control " name="currentprize" formControlName="currentprize"
+                        placeholder="Enter Prize">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control " name="date" formControlName="date"
+                        placeholder="Enter Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" class="form-control " name="time" formControlName="time"
+                        placeholder="Enter time">
+                    </div>
+                    
+                    <div class="form-group">
+                    <button class="btn btn-success" (click)="addUser()" [disabled]="!registerUser.valid">AddUser</button>
+                             do u want to reset?
+                             <button type="reset" onsubmit="onSubmit()" class="btn  btn-success px-5 mx-3">reset</button>       
+                    </div>
+                    
+                </form>
+        </div>
+        </div>
+
+
+
+
+

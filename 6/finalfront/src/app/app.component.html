@@ -1,0 +1,51 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light header">
+    <a class="navbar-brand" href="">
+        <img class="avatar" src="../assets/img.jpg" height=75 width=75 alt="Stock Logo">
+    </a>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+      </span>
+      </button>
+    <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a [routerLink]="['admin']" class="nav-link"><button type="button" class="btn btn-info">Admin</button></a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['login']" class="nav-link "><button type="button" class="btn btn-dark">Login</button></a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['register']" class="nav-link"><button type="button" class="btn btn-info">Register</button></a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['userlanding']" class="nav-link"><button type="button" class="btn btn-dark">UserLanding</button></a>
+
+        <li class="nav-item">
+          <a [routerLink]="['users']" class="nav-link"><button type="button" class="btn btn-info">users list</button></a>
+      </li>
+       
+        <div class="float-right">
+            <a class="nav-link text-danger float-right" [routerLink]="['login']"><button type="button" class="btn btn-danger">Logout</button></a>
+        </div>
+        </ul>  
+        </div>
+
+        
+      
+    
+</nav>
+
+
+<div class="container body-content app-container">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+  <p class="float-right"><a href="#">Return to top</a></p>
+
+</div>
+
+ 
