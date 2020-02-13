@@ -1,0 +1,17 @@
+com\cts\training\model\Actor.class
+com\cts\training\model\PermanentEmployee.class
+com\cts\training\model\Person.class
+com\cts\training\model\Developer.class
+com\cts\training\model\Technology.class
+com\cts\training\config\HibernateConfiguration.class
+com\cts\training\dao\impl\UserDAOImpl.class
+com\cts\training\model\Movie.class
+com\cts\training\dao\UserDAO.class
+com\cts\training\dao\CompanyDAO.class
+com\cts\training\dao\impl\CompanyDAOImpl.class
+com\cts\training\model\Register.class
+com\cts\training\model\ContractualEmployee.class
+com\cts\training\model\User.class
+com\cts\training\model\Employee.class
+com\cts\training\model\Company.class
+com\cts\training\model\PassportDetails.class
