@@ -1,0 +1,93 @@
+package com.cts.training.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Table(name="company")
+@XmlRootElement(name = "companylist")
+public class Company {
+	@Id
+	//@GeneratedValue
+	private int id;
+	private String companyname;
+	private String sector;
+	private String ceoName;
+	private String bod;
+	private double turnover;
+	
+	public Company() {
+		
+		
+	}
+
+	public Company(int id, String companyname, String sector, String ceoName, String bod, double turnover) {
+		super();
+		this.id = id;
+		this.companyname = companyname;
+		this.sector = sector;
+		this.ceoName = ceoName;
+		this.bod = bod;
+		this.turnover = turnover;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCompanyname() {
+		return companyname;
+	}
+
+	public void setCompanyname(String companyname) {
+		this.companyname = companyname;
+	}
+
+	public String getSector() {
+		return sector;
+	}
+
+	public void setSector(String sector) {
+		this.sector = sector;
+	}
+
+	public String getCeoName() {
+		return ceoName;
+	}
+
+	public void setCeoName(String ceo) {
+		this.ceoName = ceo;
+	}
+
+	public String getBod() {
+		return bod;
+	}
+
+	public void setBod(String bod) {
+		this.bod = bod;
+	}
+
+	public double getTurnover() {
+		return turnover;
+	}
+
+	public void setTurnover(double turnover) {
+		this.turnover = turnover;
+	}
+
+	@Override
+	public String toString() {
+		return "Company [id=" + id + ", companyname=" + companyname + ", sector=" + sector + ", ceoName=" + ceoName + ", bod="
+				+ bod + ", turnover=" + turnover + "]";
+	}
+
+	}
