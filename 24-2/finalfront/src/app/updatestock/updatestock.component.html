@@ -1,0 +1,51 @@
+<div class="container mt-5 w-50 card card-shadow shadow p-5 lg-5 bg-white rounded" >
+    <form [formGroup]="updateStock">
+      <p class="h4 text-center">Stock Exchange Details</p>
+  
+      <div class="input-group mt-3 mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Id</span>
+          </div>
+            <input type="number" class="form-control" name="id" id="id" placeholder="Enter number" formControlName="id"/>
+          </div>
+    
+            <div class="input-group mt-3 mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" >Stock Exchange</span>
+              </div>
+                <input type="text" class="form-control" name="stockexchange" id="stockexchange" placeholder="Enter stockexchange" formControlName="stockexchange"/>
+              </div>
+    
+              <div class="input-group mt-3 mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" >Brief</span>
+                  </div>
+                  <textarea  type="text" class="form-control" name="brief" id="brief" cols="30" rows="3" placeholder="Enter brief" formControlName="brief"></textarea>
+                  </div>
+  
+                  <div class="input-group mt-3 mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" >Contact Address</span>
+                      </div>
+                      <textarea  type="text" class="form-control" name="contactaddress" id="contactaddress" cols="30" rows="3" placeholder="Enter contactaddress" formControlName="contactaddress"></textarea>
+                      </div>
+    
+                    <div class="input-group mt-3 mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" >Remarks</span>
+                      </div>
+                        <input type="text" class="form-control" name="remarks" id="remarks" placeholder="Enter remarks" formControlName="remarks"/>
+                      </div>
+                  
+                      
+                        <button class="btn btn-outline-primary text-center form-control" (click)="updateTheStock()" [disabled]="!updateStock.valid" >Update IPO</button>
+                    
+      
+      
+      
+                    </form>
+                  
+      
+                  </div>
+            
+      
