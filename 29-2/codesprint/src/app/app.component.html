@@ -1,0 +1,55 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <a routerLink="/home"><img src="assets/images/logo2.png" class="logo rounded-circle" alt="Logo"></a>
+        <a routerLink="/home" class="h3 nav-link text-light">GiftCard</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="collNav">
+            <ul class="navbar-nav justify-content-around w-100 text-center">
+                <li class="nav-item active">
+                    <a routerLink="/home" class="nav-link text-center">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/placeorder" class="nav-link text-center">Place Order</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/giftcards" class="nav-link text-center">View Gift Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/contactus" class="nav-link text-center">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 d-none d-sm-block d-md-block bg-secondary sidebar">
+            <ul class="list-unstyled text-center">
+                <li><a class="text-light nav-link" routerLink="/home">Home</a></li>
+                <li><a class="text-light nav-link" routerLink="/placeorder">Place Order</a></li>
+                <li><a class="text-light nav-link font-weight-bold text-dark" routerLink="/giftcards">View Gift
+                        Cards</a></li>
+                <li><a class="text-light nav-link" routerLink="/contactus">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <div class="col">
+                <router-outlet></router-outlet>
+            
+        </div>
+
+    </div>
+</div>
+
+<footer class="page-footer bg-secondary p-3 container-fluid fixed-bottom">
+    <div class="row">
+        <div class="col text-center responsive-logo">
+            <i class="fa fa-copyright fa-2x text-light font-weight-bold px-2"></i>
+            <span class="font-italic text-light h5 responsive-footer">Created by: Analyzers</span>
+        </div>
+    </div>
+</footer>
