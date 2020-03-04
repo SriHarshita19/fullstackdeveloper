@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+  }
+  
+  .sidebar{
+
+    min-height: 80vh;
+  }
+
+  .main{
+    font-size: 5vw;
+  }
+
+  .card-text{
+    font-size: 3vw;
+  }
+
+  .logo{
+    height: 10vw;
+  }
+
+  .my-card:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+  }

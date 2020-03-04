@@ -1,0 +1,111 @@
+
+
+<div class="col-12 col-sm-7 col-md-8 col-lg-9 pl-4 pb-5">
+
+    <p class="main h2 text-center my-4">
+      <strong>Place Order</strong>
+    </p>
+      <div class="row py-2">
+        <div class="col-sm-2"><label for="">Amount</label></div>
+        <div class="col-sm-5 col-lg-5"><input class="form-control" type="number" id="rupees" placeholder="Rupees"></div>
+        <div class="col-sm-5 col-lg-5"><input class="form-control" type="number" id="paise" placeholder="Paisa" onblur="validate_paise()"></div>
+      </div>
+      <div class="row">
+        <div style="display: none;" class="col text-danger text-center" id="paise_min_iv">Paisa must be more than 0</div>
+      </div>
+      <div class="row">
+        <div style="display: none;" class="col text-danger text-center" id="paise_max_iv">Paisa must be less than 100</div>
+      </div>
+
+      <div class="row py-2">
+        <div class="col-sm-2"><label for="">Recipient</label></div>
+        <div class="col-sm-5 col-lg-5"><input class="form-control" type="text" id="rec_fname" onblur="validate_first_name()" placeholder="First Name"></div>
+        <div class="col-sm-5 col-lg-5"><input class="form-control" type="text" id="rec_lname" onblur="validate_last_name()" placeholder="Last Name"></div>
+      </div>
+      <div class="row">
+        <div style="display: none;" class="col text-danger text-center" id="rec_fname_iv">First name cannot contain number</div>
+      </div>
+      <div class="row">
+        <div style="display: none;" class="col text-danger text-center" id="rec_lname_iv">Last name cannot contain number</div>
+      </div>
+</div>
+      <div class="row">
+
+        <fieldset class="mx-2 my-2 w-100 border">
+          <legend>Shipping Address</legend>
+
+          <div class="row py-2">
+            <div class="col"><input class="form-control" type="text" id="street" placeholder="Street" ></div>
+          </div>
+          <div class="row py-2">
+            <div class="col"><input class="form-control" type="text" id="city" placeholder="City"></div>
+            <div class="col"><input class="form-control" type="text" id="state" placeholder="State"></div>
+          </div>
+
+          <div class="row py-2">
+            <div class="col">
+              <select class="form-control" id="country">
+                <option value="India" selected>India</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+                <option value="Russia">Russia</option>
+                <option value="Japan">Japan</option>
+              </select>
+            </div>
+            <div class="col"><input class="form-control" type="number" id="pincode" onblur="validate_pincode()" placeholder="Pincode"></div>
+          </div>
+          <div class="row">
+            <div style="display: none;" class="col text-danger text-center" id="pincode_iv">Pincode Must be of 6 digits only</div>
+          </div>
+
+      
+
+      </fieldset>
+
+
+      <div class="row py-2">
+        <div class="col-sm-2"><label for="">Buyer's Name</label></div>
+        <div class="col-sm-5 col-lg-5"><input class="form-control" type="text" id="buyer_fname" onblur="validate_buyer_first_name()" placeholder="First Name"></div>
+        <div class="col-sm-5 col-lg-5"><input class="form-control" type="text" id="buyer_lname" onblur="validate_buyer_last_name()" placeholder="Last Name"></div>
+      </div>
+      <div class="row">
+        <div style="display: none;" class="col text-danger" id="buyer_fname_iv">First name cannot contain number</div>
+        <div style="display: none;" class="col text-danger" id="buyer_lname_iv">Last name cannot contain number</div>
+      </div>
+
+
+
+
+      <div class="row py-2">
+        <div class="col-sm-2"><label for="">Phone Number</label></div>
+
+        <div class="col form-group">
+          <div class="input-group-prepend">
+            <input class="" type="text" size="1" value="+91" disabled>
+          <input class="form-control" type="text" min="1" max="9"
+            onkeypress="validate_number(this);next(this)" id="p1">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p2">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p3">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p4">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p5">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p6">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p7">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p8">
+          <input class="form-control" type="text" min="0" max="9" onkeypress="next(this)" id="p9">
+          <input class="form-control" type="text" min="0" max="9" id="p10" onkeypress="last(this)">
+        </div>
+        </div>
+
+      </div>
+
+      <div class="row py-2">
+        <div class="col-sm-2"><label for="email">Email</label></div>
+        <div class="col"><input class="form-control" type="email" id="email" placeholder="Your Email" required></div>
+      </div>
+
+      <div class="row py-2">
+        <button class="btn btn-block btn-outline-success" onclick="check_validation_flags()">Place Order</button>
+      </div>
+  </div>
+  
+

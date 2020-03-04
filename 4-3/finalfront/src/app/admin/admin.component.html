@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light header">
+    <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+        <ul class="nav navbar-nav mr-auto">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+            <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+          
+
+<li class="nav-item">
+    <a [routerLink]="['/users']" class="nav-link"><button type="button" class="btn btn-info"><i class="fas fa-users"></i>users list</button></a>
+</li>
+<li class="nav-item">
+  <a [routerLink]="['/ipoadd']" class="nav-link"><button type="button" class="btn btn-info">ipo list</button></a>
+</li>
+<li class="nav-item">
+<a [routerLink]="['/stock']" class="nav-link"><button type="button" class="btn btn-info">stock list</button></a>
+</li>
+<li class="nav-item">
+<a [routerLink]="['/stockprice']" class="nav-link"><button type="button" class="btn btn-info">stockprice list</button></a>
+</li>
+<li class="nav-item">
+    <a [routerLink]="['/company']" class="nav-link"><button type="button" class="btn btn-info">company list</button></a>
+    </li>
+</ul>
+    </div>
+</nav>
+
+<div class="row mb-3">
+     <div class="col-4 my-2">
+                
+        <div class="card my-card border border-curved text-center btn btn-outline-secondary" onclick="location.href='import'">
+            <div class="card-body">
+                <h2 class="card-title display-6">Import Data</h2>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-4 my-2">
+                
+        <div class="card my-card border border-curved text-center btn btn-outline-primary" onclick="location.href='addstockprice'">
+            <div class="card-body">
+                <h2 class="card-title display-6">Stock Price</h2>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="row mb-3">
+    <div class="col-4 my-2">
+                
+       <div class="card my-card border border-curved text-center btn btn-outline-secondary" onclick="location.href='stockexchange'">
+            <div class="card-body">
+                <h2 class="card-title display-6">Stock Exchange</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 my-2">
+                
+        <div class="card my-card border border-curved text-center btn btn-outline-primary" onclick="location.href='ipo'">
+            <div class="card-body">
+                <h2 class="card-title display-6">Update IPO</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-4 my-2">
+                
+    <div class="card my-card border border-curved text-center btn btn-outline-primary" onclick="location.href='addnewcompany'">
+        <div class="card-body">
+            <h2 class="card-title display-6">Add new Company</h2>
+        </div>
+    </div>
+</div>   
+<div class="container body-content app-container">
+    <router-outlet></router-outlet>
+  </div>
