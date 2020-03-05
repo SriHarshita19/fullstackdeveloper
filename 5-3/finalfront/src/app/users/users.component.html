@@ -1,0 +1,29 @@
+
+<table class="table table-primary table-hover table-responsive">
+    <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>email</th>
+        <th>phone</th>
+        <th>password</th>
+         <th>actions</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.firstname}}</td>
+        <td>{{user.lastname}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.password}}</td>
+         <td><button class="btn btn-danger" (click)="deleteUser(user)"><i class="fas fa-trash"></i>Delete</button>
+         <button class="btn btn-primary" (click)="updateUser(user)"><i class="fas fa-pen-square"></i>Update</button>
+
+        
+        </td> 
+    </tr>
+</table>
+
+
