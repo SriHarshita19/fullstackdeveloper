@@ -1,0 +1,25 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="updateUser" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="number" formControlName="id" placeholder="User id" name="id" class="form-control" id="id" disabled/>
+</div>
+<div class="form-group">
+    <input type="text" formControlName="username" placeholder="enter username" name="username" class="form-control" id="username">
+</div>
+<div class="form-group">
+    <input type="text" formControlName="firstname" placeholder="enter firstname" name="firstname" class="form-control" id="firstname">
+</div>
+<div class="form-group">
+    <input type="text" formControlName="lastname" placeholder="enter lastname" name="lastname" class="form-control" id="lastname">
+</div>
+<div class="form-group">
+    <input type="number" formControlName="phone" placeholder="enter phone" name="phone" class="form-control" id="phone">
+</div>
+<div class="form-group">
+    <input type="password" formControlName="password" placeholder="enter password" name="password" class="form-control" id="password">
+</div>
+<button class="btn btn-primary" (click)="updateTheUser()" [disabled]="!updateUser.valid">Update User</button>
+<a onclick="location.href='users'"><button class="btn btn-primary">Cancel</button></a>
+    </form>
+    </div>
