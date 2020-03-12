@@ -1,0 +1,109 @@
+<nav class="navbar navbar-expand-lg navbar-dark nav-responsive bg-dark header">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
+<span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-dark" id="collapsibleNavbar2">
+        <ul class="nav navbar-nav mr-auto">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+            <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+          
+
+<li class="nav-item">
+    <a [routerLink]="['/users']" class="nav-link"><button type="button" class="btn btn-info"><i class="fas fa-users"></i>users list</button></a>
+</li>
+<li class="nav-item">
+  <a [routerLink]="['/ipoadd']" class="nav-link"><button type="button" class="btn btn-info">ipo list</button></a>
+</li>
+<li class="nav-item">
+<a [routerLink]="['/stock']" class="nav-link"><button type="button" class="btn btn-info">stock list</button></a>
+</li>
+<li class="nav-item">
+<a [routerLink]="['/stockprice']" class="nav-link"><button type="button" class="btn btn-info">stockprice list</button></a>
+</li>
+<li class="nav-item">
+    <a [routerLink]="['/company']" class="nav-link"><button type="button" class="btn btn-info">company list</button></a>
+    </li>
+</ul>
+    </div>
+</nav>
+
+
+<div class="col-md-3 btn" (click)="movetoadd()">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card" width="100" onclick="location.href='import'">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="assets/images/migrate-import-data.gif"  width="80" alt="card image"></p>
+                        <h4 class="card-title">Import Data</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="col-md-3 btn" (click)="movetoadd()">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card" width="100" onclick="location.href='addstockprice'">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="assets/images/price.webp"  width="160" alt="card image"></p>
+                        <h4 class="card-title">Stock Price</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="col-md-3 btn" (click)="movetoadd()">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card" width="100" onclick="location.href='stockexchange'">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="assets/images/stock-exch.jpg"  width="110" alt="card image"></p>
+                        <h4 class="card-title">Stock Exchange</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <br>
+   <br>
+   <br>
+   <div class="col-md-3 btn" (click)="movetoadd()">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card" width="100" onclick="location.href='ipo'">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="assets/images/ipo.webp"  width="150" alt="card image"></p>
+                        <h4 class="card-title">Update IPO</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <div class="col-md-3 btn" (click)="movetoadd()">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card" width="100" onclick="location.href='addnewcompany'">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="assets/images/company.jpeg"  width="130" alt="card image"></p>
+                        <h4 class="card-title">Add New Company</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+<div class="container body-content app-container">
+    <router-outlet></router-outlet>
+  </div>
