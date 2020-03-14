@@ -1,0 +1,14 @@
+1583233264922	Delete element
+1583233353594	Rename package 'com.cts.training.registerservice.controller'
+1583233391624	Rename package 'com.cts.training.registerservice.serviceimpl'
+1583233420656	Rename package 'com.cts.training.registerservice.service'
+1583233442921	Rename package 'com.cts.training.registerservice.model'
+1583233462320	Rename package 'com.cts.training.registerservice.DTO'
+1583233517197	Rename package 'com.cts.training.registerservice.dao'
+1583233586469	Rename type 'RegisterRestController'
+1583233621903	Rename type 'RegisterDAO'
+1583233641882	Delete element
+1583233649578	Delete element
+1583233671200	Rename type 'Register'
+1583233712596	Rename type 'RegisterService'
+1583233736187	Rename type 'RegisterServiceImpl'

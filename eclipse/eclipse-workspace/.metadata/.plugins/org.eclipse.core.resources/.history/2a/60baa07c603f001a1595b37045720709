@@ -1,0 +1,23 @@
+package com.cts.main;
+
+public class Pallindrome {
+public static void main(String args[])
+{
+	int rem,i,r=0,n=121;
+	i=n;
+	while(n!=0)
+	{
+		rem=n%10;
+		i=i*10+rem;
+		n=n/10;
+	}
+	if(i==r)
+	{
+		System.out.println("pallindrome");
+	}
+	else
+	{
+		System.out.println("not a pallindrome");
+	}
+}
+}

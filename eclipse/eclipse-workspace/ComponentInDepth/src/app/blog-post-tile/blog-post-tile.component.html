@@ -1,0 +1,10 @@
+<div class="card" [ngClass]="{'fav':post.isFav}" style="margin-left: 100px;">
+    <div class="card-body">
+        <!-- appHighlight="blue" -->
+        <h5 class="card-title" appHighlight color="green">{{post.title}}</h5>
+        <!-- <p class="card-text">{{post.summary | truncate:[30] }}</p> -->
+        <p class="card-text" (click)="showFullSummary()" style="cursor: pointer;">{{post.summary }}</p>
+        <a href="#" (click)="toggleFav()" class="btn btn-primary">Favoutite</a> &nbsp;&nbsp;
+        <a href="#" class="btn btn-primary" (click)="showFullSummary()">Read</a>
+    </div>
+</div>

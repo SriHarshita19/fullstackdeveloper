@@ -1,0 +1,19 @@
+package com.cts.main;
+public class Data {
+    private String name;
+    public String getName() {
+        return this.name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+public class AccessMod {
+	public static void main(String args[])
+	{
+		Data d=new Data();
+		d.setName("veda");
+		System.out.println(d.getName());
+	}
+
+}

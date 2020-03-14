@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="company-service"/>
+<aop-project name="sector-service"/>
+<aop-project name="netflix-eureka-naming-server"/>
+<aop-project name="StockExchangeMiddleware"/>
+<aop-project name="SpringSecurityInMemory"/>
+<aop-project name="stock-price-service"/>
+<aop-project name="user-service"/>
+<aop-project name="cts-service-2"/>
+<aop-project name="SpringBootDemo"/>
+<aop-project name="netflix-zuul-api-gateway-server"/>
+<aop-project name="ProfileDemo"/>
+<aop-project name="initialpublicoffering-service"/>
+<aop-project name="demo-1"/>
+<aop-project name="demo-3"/>
+<aop-project name="SpringJdbcTemplate"/>
+<aop-project name="HelloWorld-service"/>
+<aop-project name="SpringBootLayeredapp"/>
+<aop-project name="register-service"/>
+<aop-project name="StockMarketBackend"/>
+<aop-project name="stockExchange-service"/>
+<aop-project name="SpringRestStockExchange"/>
+<aop-project name="cts-service"/>
+</aop-reference-model>

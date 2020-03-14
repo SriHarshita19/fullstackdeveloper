@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<h2>Child sent:{{msg}}</h2>
+<button (click)="callChildCompFun()">Call child fun</button>
+
+<app-child [parentdata]="pdata" (childEvent)="onOutput($event)" #child>
+ 
+</app-child>

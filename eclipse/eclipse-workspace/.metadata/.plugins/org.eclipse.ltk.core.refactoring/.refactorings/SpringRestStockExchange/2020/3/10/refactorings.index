@@ -1,0 +1,14 @@
+1583148360479	Rename type 'IPORestController'
+1583148391772	Rename type 'IPO'
+1583148418498	Rename type 'IPORepo'
+1583148444591	Rename type 'IPORestResources'
+1583149084897	Rename package 'com.cts.training.repo'
+1583149488101	Rename type 'CompanyRepo'
+1583149503894	Rename type 'InitialPublicOfferingRepo'
+1583149549455	Rename type 'StockExchangeRepo'
+1583149576581	Rename type 'StockPriceRepo'
+1583149614339	Rename type 'RegisterRepo'
+1583151823853	Delete element
+1583228292169	Copy packages
+1583228511293	Copy compilation unit
+1583494315669	Copy packages

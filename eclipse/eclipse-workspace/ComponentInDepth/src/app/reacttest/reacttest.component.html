@@ -1,0 +1,54 @@
+<div class="container-fluid">
+ <h2>Registration Form</h2>
+  <form [formGroup]="registrationForm">
+      <div class="form-group">
+           <label>User Name</label> 
+           <input formControlName="userName" type="text" class="form-control">
+           <span style="color: red;" *ngIf="registrationForm.controls.userName.touched && registrationForm.controls.userName.errors 
+            && registrationForm.controls.userName.errors.required">Enter UserName</span>
+            <span style="color: red;" *ngIf="registrationForm.controls.userName.errors
+            && registrationForm.controls.userName.errors.minlength">Enter Min 5 chars</span>
+      </div>
+      <div class="form-group">
+            <label>Password</label>
+            <input formControlName="pwd" type="password" class="form-control">
+      </div>
+      <div class="form-group">
+            <label>Confirm Password</label>
+            <input formControlName="cpwd" type="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Age</label>
+        <input formControlName="age" type="text" class="form-control">
+        <span style="color:red" *ngIf="registrationForm.controls.age.touched &&
+        registrationForm.controls.age.errors 
+        && registrationForm.controls.age.errors.required">Age is required</span>
+        <span style="color:red" *ngIf="registrationForm.controls.age.errors  
+        && registrationForm.controls.age.errors.pattern">Enter Numeric values</span>
+        <span style="color:red" *ngIf="registrationForm.controls.age.errors && 
+        registrationForm.controls.age.errors.min">Min 20</span>
+        <span style="color:red" *ngIf="registrationForm.controls.age.errors && 
+        registrationForm.controls.age.errors.max">Max 60</span>
+      </div>
+  
+      <div formGroupName="address">
+          <div class="form-group">
+                <label>City</label>
+                <input formControlName="city" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+                <label>State</label>
+                <input formControlName="state" type="text" class="form-ontrol">                
+          </div>
+          <div class="form-group">
+              <label>Postal Code</label>
+              <input formControlName="postalcode" type="text" class="form-control">
+          </div>          
+      </div>
+      <button class="btn btn-primary" type="submit" (click)="funregister()">Register</button>
+      <button (click)="loadApiData()" class="btn btn-secondary">Load Apidata</button>
+  </form>
+  {{registrationForm.value | json}}
+</div>
+<input type="text" id="{{myid}}"><br>
+<input type="text" disabled="{{isDisabled}}">

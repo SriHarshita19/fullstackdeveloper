@@ -1,0 +1,5 @@
+<%@ include file="header.jsp" %>
+<body>
+<jsp:useBean id="user" class=com.cts.training.bean.LoginBean></jsp:useBean>
+</body>
+</html>

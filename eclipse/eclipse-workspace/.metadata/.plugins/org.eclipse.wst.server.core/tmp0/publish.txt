@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Feb 20 15:50:20 IST 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Dell\\Desktop\\springrestservice\\WebContent\\WEB-INF\\lib\\spring-web-4.0.0.RELEASE.jar=WEB-INF/lib/spring-web-4.0.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:StockExchangeBackend=WEB-INF/lib/StockExchangeBackend-0.0.1-SNAPSHOT.jar

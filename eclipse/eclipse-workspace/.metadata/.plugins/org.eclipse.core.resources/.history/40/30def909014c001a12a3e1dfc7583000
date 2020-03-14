@@ -1,0 +1,110 @@
+package com.cts.training.dao.impl;
+
+import java.util.List;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import com.cts.training.dao.CompanyDAO;
+
+import com.cts.training.model.Company;
+import com.cts.training.model.Register;
+import com.cts.training.model.User;
+
+public class CompanyDAOImpl implements CompanyDAO{
+	
+	SessionFactory sessionFactory;
+
+	@Override
+	public boolean saveCompany(Company company) {
+		try {
+			sessionFactory.getCurrentSession().save(company);
+			return true;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public boolean updateCompany(Company company) {
+		try {
+			sessionFactory.getCurrentSession().update(company);
+			return true;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public boolean deleteCompany(Company company) {
+		try {
+			sessionFactory.getCurrentSession().delete(company);
+			return true;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public Company getCompanyById(int id) {
+		try {
+			return sessionFactory.getCurrentSession().get(Company.class,id);
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	
+
+	@Override
+	public List<Company> getAllCompanies() {
+		// TODO Auto-generated method stub
+		try {
+			List<Company> companies = sessionFactory.getCurrentSession().createQuery("from Company").list();
+			return companies;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		return null;
+	}
+
+	}
+
+	@Override
+	public boolean isValidCompany(int id, String name) {
+		try {
+			Query query=sessionFactory.getCurrentSession().createQuery("from User where username=:username and password=:password");
+			query.setString(id, "id");
+			query.setString("name",name);
+			User user=(User) query.uniqueResult();
+			if(user.getPassword()!=null)
+			{
+				return true;
+			}
+		} catch (HibernateException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+	@Override
+	public List<Company> getAllCompany() {
+		try {
+		 List<Company> company= sessionFactory.getCurrentSession().createQuery("from Company").list();
+		return company;
+
+	}
+		catch(HibernateException e) {
+			e.printStackTrace();
+			return null;
+		}
+}
+}
+

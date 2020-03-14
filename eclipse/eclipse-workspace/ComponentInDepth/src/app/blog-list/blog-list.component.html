@@ -1,0 +1,48 @@
+<app-card>
+<a href="#" (click)="expandAll()">Expand All</a>
+<a href="#" (click)="favAll()">Favourite All</a>
+</app-card>
+
+<!--
+<app-card>
+      <h1>Heading</h1>
+      <p>Para</p>
+</app-card>
+-->
+<app-blog-post-tile
+   *ngFor="let post of blogposts[currentPage]" 
+[post]="post" #tile>
+</app-blog-post-tile>
+
+<app-paginator 
+   [noOfPages]="blogposts.length" 
+   (pageNumberClick)="updatPage($event)">
+</app-paginator>
+
+
+<div style="margin-left: 600px;">
+   <button class="btn btn-primary" (click)="getalldata()">Get all data</button>
+<table>
+   <tr *ngFor="let dat of data2">
+      <td>{{dat.id}}</td>
+      <td>{{dat.description}}</td>
+      <td>{{dat.price}}</td>
+      <button class="btn btn-warning" (click)="deletdataById(dat.id)">Delete</button><br>   
+   </tr>
+  
+</table>
+</div>
+<div>
+   <input type="text" [(ngModel)]="cid">
+   <button class="btn btn-primary" (click)="getdataById()">Get data</button><br>
+   <span>Id:&nbsp;&nbsp;{{data.id}}</span><br>
+   <span>Description:&nbsp;&nbsp;{{data.description}}</span><br>
+   <span>Price:&nbsp;&nbsp;{{data.price}}</span>
+</div>
+
+<div>
+   <button class="btn btn-primary" (click)="updateDataById()">Update data</button><br>
+</div>
+<div>
+   <button class="btn btn-primary" (click)="saveCustData()">Save data</button><br>
+</div>

@@ -1,0 +1,20 @@
+package com.cts.main;
+
+public class LampClass {
+		  boolean isOn;
+		  void turnOn() {
+		    isOn = true;
+		  }
+		  void turnOff() {
+		   isOn = false;
+		  }
+		}
+		class ClassObjectsExample {
+		public static void main(String[] args) {
+		   LampClass l1 = new LampClass(); // create l1 object of Lamp class
+		   LampClass l2 = new LampClass(); // create l2 object of Lamp class
+		  }
+		}
+
+
+

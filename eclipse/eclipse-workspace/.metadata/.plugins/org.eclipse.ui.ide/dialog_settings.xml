@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Dell\Desktop\user-service"/>
+		<item value="C:\Users\Dell\eclipse-workspace\StockExchangeCharting"/>
+		<item value="C:\Users\Dell\Desktop\StockExchangeCharting"/>
+	</list>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Dell\Desktop\register-service"/>
+			<item value="C:\Users\Dell\Desktop\ProfileDemo"/>
+			<item value="C:\Users\Dell\Desktop\SpringRestStockExchange"/>
+			<item value="C:\Users\Dell\Desktop\StockMarketBackend"/>
+			<item value="C:\Users\Dell\eclipse-workspace\restproj"/>
+			<item value="C:\Users\Dell\eclipse-workspace\SpringBootLayeredapp"/>
+			<item value="C:\Users\Dell\Desktop\StockExchangeChartingWeb"/>
+			<item value="C:\Users\Dell\eclipse-workspace\StockExchangeChartingWeb"/>
+			<item value="C:\Users\Dell\Desktop\springrestservice"/>
+			<item value="C:\Users\Dell\eclipse-workspace\StockExchangeBackend"/>
+			<item value="C:\Users\Dell\Desktop\StockExchangeBack"/>
+			<item value="C:\Users\Dell\eclipse-workspace\StockExchangeCharting"/>
+			<item value="C:\Users\Dell\Desktop\SpringSecurityInMemory"/>
+			<item value="C:\Users\Dell\Desktop\EcommerceSecurity"/>
+			<item value="C:\Users\Dell\Desktop\SpringJdbcTemplate"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="-30"/>
+			<item key="DIALOG_Y_ORIGIN" value="-62"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+</section>

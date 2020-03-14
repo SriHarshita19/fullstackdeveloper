@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cts.activity.training.file.FIleHandling&apos; to &apos;FileHandling&apos;&#x0D;&#x0A;- Original project: &apos;CollectionActivity&apos;&#x0D;&#x0A;- Original element: &apos;com.cts.activity.training.file.FIleHandling&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cts.activity.training.file.FileHandling&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FIleHandling&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.cts.activity.training.file{FIleHandling.java[FIleHandling" matchStrategy="1" name="FileHandling" qualified="false" references="true" similarDeclarations="false" stamp="1578894614789" textual="false" version="1.0"/>
+</session>

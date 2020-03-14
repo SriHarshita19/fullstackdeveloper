@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="address" class="com.cts.training.model.AddressEntity"
+p:id="201" p:housenumber="E-444" p:street="Street no 5" p:city="delhi" p:state="new delhi"/>
+<bean id="user" class="com.cts.training.model.UserEntity"
+p:id="2222" p:username="anu123" p:password="123"
+p:email="anu@gmail.com" p:enabled="true" p:address-ref="address"/>
+
+
+</beans>

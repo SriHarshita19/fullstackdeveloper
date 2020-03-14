@@ -1,0 +1,18 @@
+<%@include file="header.jsp" %>
+<c:out value="Hello World"/>
+<br>
+<c:set var="name" value="Harshita"/>
+Name:<c:out value="${name}"/>
+<c:remove var="name"/>
+<br/>
+Name:<c:out value="${name}"/>
+<c.forEach var="i" begin="1" end="6" step="1">
+
+</c.forEach>
+Loop: <br/>
+<c:forEach var="i" begin="1" end="10" step="1">
+<h2>${i}</h2>
+</c:forEach>
+</body>
+</html>
+
